@@ -1,0 +1,6 @@
+id: keywords
+produces: keywords
+deps:
+  - user_text
+operator: GenericPromptOperator
+prompt_template: "prompts/keywords.md"

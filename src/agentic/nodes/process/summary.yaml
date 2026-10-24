@@ -1,0 +1,6 @@
+id: summary
+produces: summary
+deps:
+  - user_text
+operator: GenericPromptOperator
+prompt_template: "prompts/summary.md"

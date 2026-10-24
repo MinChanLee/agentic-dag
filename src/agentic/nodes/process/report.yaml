@@ -1,0 +1,18 @@
+# Composite node: expands into two internal steps before scheduling.
+# Downstream nodes only ever see `report` — the internal steps are invisible to them.
+id: report
+produces: report
+deps:
+  - summary
+  - keywords
+steps:
+  - id: report_draft
+    produces: report_draft
+    deps: [summary, keywords]
+    operator: GenericPromptOperator
+    prompt_template: "prompts/report_draft.md"
+  - id: report_final
+    produces: report
+    deps: [report_draft]
+    operator: GenericPromptOperator
+    prompt_template: "prompts/report_final.md"

@@ -1,0 +1,4 @@
+id: user_text
+produces: user_text
+kind: input
+description: "사용자 텍스트 입력"

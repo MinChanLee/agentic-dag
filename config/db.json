@@ -1,0 +1,4 @@
+{
+  "runs_table": "pipeline_runs",
+  "logs_table": "pipeline_logs"
+}

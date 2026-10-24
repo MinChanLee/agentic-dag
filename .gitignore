@@ -1,0 +1,9 @@
+.venv/
+.env
+output.md
+output.txt
+inputs_test.json
+dag.dot
+__pycache__/
+*.egg-info/
+.pytest_cache/

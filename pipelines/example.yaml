@@ -1,0 +1,8 @@
+name: "example"
+description: "텍스트 → (요약 ∥ 키워드) → 리포트(초안 → 최종) 예시 파이프라인"
+node_dir: "src/agentic/nodes"
+nodes:
+  - "input/user_text"
+  - "process/summary"
+  - "process/keywords"
+  - "process/report"
